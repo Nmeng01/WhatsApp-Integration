@@ -1,0 +1,60 @@
+2024-09-03 14:21:27,628 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
+2024-09-03 15:13:29,203 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
+2024-09-03 15:14:03,854 - ERROR - Failed to delete ticket 58619. Status code: 404
+2024-09-03 15:14:06,724 - ERROR - Failed to delete ticket 58621. Status code: 404
+2024-09-03 15:14:09,422 - ERROR - Failed to delete ticket 58622. Status code: 404
+2024-09-03 15:14:12,434 - ERROR - Failed to delete ticket 58623. Status code: 404
+2024-09-03 15:14:39,450 - ERROR - Failed to delete ticket 58624. Status code: 404
+2024-09-03 15:15:28,301 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
+2024-09-03 15:22:19,707 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
+2024-09-03 15:22:45,002 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
+2024-09-03 15:30:01,547 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
+2024-09-03 15:31:50,310 - ERROR - Failed to delete ticket 58634. Status code: 404
+2024-09-03 15:37:57,488 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
+2024-09-03 15:55:22,022 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
+2024-09-03 16:08:52,436 - ERROR - Failed to delete ticket 58646. Status code: 404
+2024-09-03 16:09:04,826 - ERROR - Failed to delete ticket 58647. Status code: 404
+2024-09-03 16:09:18,903 - ERROR - Failed to delete ticket 58648. Status code: 404
+2024-09-03 16:09:55,482 - ERROR - Failed to delete ticket 58649. Status code: 404
+2024-09-03 16:18:46,399 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
+2024-09-03 16:20:50,872 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
+2024-09-03 16:29:50,023 - ERROR - Failed to delete ticket 58659. Status code: 404
+2024-09-03 16:30:02,677 - ERROR - Failed to delete ticket 58660. Status code: 404
+2024-09-03 16:30:16,444 - ERROR - Failed to delete ticket 58661. Status code: 404
+2024-09-03 16:30:50,922 - ERROR - Exception in callback StreamReaderProtocol.connection_made.<locals>.callback(<Task cancell...o/run.py:104>>) at /usr/local/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/streams.py:248
+handle: <Handle StreamReaderProtocol.connection_made.<locals>.callback(<Task cancell...o/run.py:104>>) at /usr/local/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/streams.py:248>
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/usr/local/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/streams.py", line 249, in callback
+    exc = task.exception()
+          ^^^^^^^^^^^^^^^^
+  File "/Users/nicholasmeng/.local/share/virtualenvs/WhatsApp-Integration-j_j7e-Vx/lib/python3.11/site-packages/hypercorn/asyncio/run.py", line 110, in _server_callback
+    await TCPServer(app, loop, config, context, lifespan_state, reader, writer)
+  File "/Users/nicholasmeng/.local/share/virtualenvs/WhatsApp-Integration-j_j7e-Vx/lib/python3.11/site-packages/hypercorn/asyncio/tcp_server.py", line 56, in run
+    async with TaskGroup(self.loop) as task_group:
+  File "/Users/nicholasmeng/.local/share/virtualenvs/WhatsApp-Integration-j_j7e-Vx/lib/python3.11/site-packages/hypercorn/asyncio/task_group.py", line 74, in __aexit__
+    await self._task_group.__aexit__(exc_type, exc_value, tb)
+  File "/usr/local/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/taskgroups.py", line 134, in __aexit__
+    raise propagate_cancellation_error
+  File "/Users/nicholasmeng/.local/share/virtualenvs/WhatsApp-Integration-j_j7e-Vx/lib/python3.11/site-packages/hypercorn/asyncio/tcp_server.py", line 72, in run
+    await self._read_data()
+  File "/Users/nicholasmeng/.local/share/virtualenvs/WhatsApp-Integration-j_j7e-Vx/lib/python3.11/site-packages/hypercorn/asyncio/tcp_server.py", line 97, in _read_data
+    data = await asyncio.wait_for(self.reader.read(MAX_RECV), self.config.read_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/tasks.py", line 452, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/streams.py", line 708, in read
+    await self._wait_for_data('read')
+  File "/usr/local/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/streams.py", line 540, in _wait_for_data
+    await self._waiter
+asyncio.exceptions.CancelledError
+2024-09-03 16:55:44,318 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
+2024-09-03 18:01:13,390 - ERROR - Failed to delete ticket 58679. Status code: 404
+2024-09-03 18:21:01,404 - ERROR - Failed to delete ticket 58682. Status code: 404
+2024-09-04 16:24:58,025 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
+2024-09-04 17:27:04,329 - ERROR - An unexpected error occurred: 'text'
+2024-09-04 17:32:57,482 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
+2024-09-04 18:14:49,440 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
+2024-09-04 18:15:03,297 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
