@@ -1,27 +1,14 @@
-2024-09-03 14:21:27,628 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
-2024-09-03 15:13:29,203 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
-2024-09-03 15:14:03,854 - ERROR - Failed to delete ticket 58619. Status code: 404
-2024-09-03 15:14:06,724 - ERROR - Failed to delete ticket 58621. Status code: 404
-2024-09-03 15:14:09,422 - ERROR - Failed to delete ticket 58622. Status code: 404
-2024-09-03 15:14:12,434 - ERROR - Failed to delete ticket 58623. Status code: 404
-2024-09-03 15:14:39,450 - ERROR - Failed to delete ticket 58624. Status code: 404
-2024-09-03 15:15:28,301 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
-2024-09-03 15:22:19,707 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
-2024-09-03 15:22:45,002 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
-2024-09-03 15:30:01,547 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
-2024-09-03 15:31:50,310 - ERROR - Failed to delete ticket 58634. Status code: 404
-2024-09-03 15:37:57,488 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
-2024-09-03 15:55:22,022 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
-2024-09-03 16:08:52,436 - ERROR - Failed to delete ticket 58646. Status code: 404
-2024-09-03 16:09:04,826 - ERROR - Failed to delete ticket 58647. Status code: 404
-2024-09-03 16:09:18,903 - ERROR - Failed to delete ticket 58648. Status code: 404
-2024-09-03 16:09:55,482 - ERROR - Failed to delete ticket 58649. Status code: 404
-2024-09-03 16:18:46,399 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
-2024-09-03 16:20:50,872 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
-2024-09-03 16:29:50,023 - ERROR - Failed to delete ticket 58659. Status code: 404
-2024-09-03 16:30:02,677 - ERROR - Failed to delete ticket 58660. Status code: 404
-2024-09-03 16:30:16,444 - ERROR - Failed to delete ticket 58661. Status code: 404
-2024-09-03 16:30:50,922 - ERROR - Exception in callback StreamReaderProtocol.connection_made.<locals>.callback(<Task cancell...o/run.py:104>>) at /usr/local/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/streams.py:248
+
+2024-09-12 15:00:13,861 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
+2024-09-12 15:06:29,722 - ERROR - An unexpected error occurred: 'text'
+2024-09-12 15:16:08,236 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
+2024-09-12 15:16:43,605 - ERROR - An unexpected error occurred: 'text'
+2024-09-12 15:16:45,236 - ERROR - An unexpected error occurred: 'text'
+2024-09-12 15:16:48,756 - ERROR - An unexpected error occurred: 'text'
+2024-09-12 15:17:15,845 - ERROR - An unexpected error occurred: 'text'
+2024-09-12 15:22:36,446 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
+2024-09-12 15:23:19,721 - ERROR - An unexpected error occurred: 'text'
+2024-09-12 15:30:29,362 - ERROR - Exception in callback StreamReaderProtocol.connection_made.<locals>.callback(<Task cancell...o/run.py:104>>) at /usr/local/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/streams.py:248
 handle: <Handle StreamReaderProtocol.connection_made.<locals>.callback(<Task cancell...o/run.py:104>>) at /usr/local/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/streams.py:248>
 Traceback (most recent call last):
   File "/usr/local/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/events.py", line 80, in _run
@@ -50,11 +37,7 @@ Traceback (most recent call last):
   File "/usr/local/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/streams.py", line 540, in _wait_for_data
     await self._waiter
 asyncio.exceptions.CancelledError
-2024-09-03 16:55:44,318 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
-2024-09-03 18:01:13,390 - ERROR - Failed to delete ticket 58679. Status code: 404
-2024-09-03 18:21:01,404 - ERROR - Failed to delete ticket 58682. Status code: 404
-2024-09-04 16:24:58,025 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
-2024-09-04 17:27:04,329 - ERROR - An unexpected error occurred: 'text'
-2024-09-04 17:32:57,482 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
-2024-09-04 18:14:49,440 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
-2024-09-04 18:15:03,297 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
+2024-09-12 15:30:45,510 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
+2024-09-12 15:37:37,330 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
+2024-09-12 15:38:26,568 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
+2024-09-12 15:38:35,370 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
