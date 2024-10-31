@@ -6,6 +6,9 @@ import os
 import asyncio
 from datetime import date
 import time
+from bs4 import BeautifulSoup
+import json
+import re
 
 app = Quart(__name__)
 
@@ -30,6 +33,8 @@ def verify_webhook():
 async def webhook():
     try:
         data = await request.json
+        if "messages" not in data.get("entry", [{}])[0].get("changes", [{}])[0].get("value", {}):
+            return jsonify({"status": "Ignored non-user message"}), 200
         load_dotenv()
         subdomain = os.getenv('SUBDOMAIN')
         phone = data['entry'][0]['changes'][0]['value']['messages'][0]['from']
@@ -138,6 +143,39 @@ async def webhook():
     except Exception as e:
         logging.error(f'An unexpected error occurred: {str(e)}')
         return jsonify({'error': 'Unexpected error'}), 500
+
+@app.route('/agent_reply', methods=['POST'])
+async def agent_reply():
+    data = await request.get_json()
+    whatsapp_url = f'https://graph.facebook.com/v20.0/{os.getenv("WA_ID")}/messages'
+    html_parser = BeautifulSoup(data['reply'], "html.parser")
+    reply = html_parser.get_text(separator="\n").strip()
+    first_split = reply.find("\n\n")
+    second_split = reply.find("\n\n", first_split + 2)
+    reply = reply[:first_split] + reply[second_split + 2:]
+    reply = re.sub(r"-{10,}", "", reply)
+    phone = data['subject'][22:]
+    payload = {
+        'messaging_product': 'whatsapp',
+        'to': f'{phone}',
+        "type": "text", 
+        "text": { "body": f"{data['agent_name']} replied: {reply}"}
+    }
+    payload_str = json.dumps(payload)
+    command = f"""curl -X POST {whatsapp_url} \
+                  -H 'Authorization: Bearer {os.getenv('WA_TOKEN')}' \
+                  -H 'Content-Type: application/json' \
+                  -d '{payload_str}'"""
+    process = await asyncio.create_subprocess_shell(
+        command,
+        stderr=asyncio.subprocess.PIPE
+    )
+    _, stderr = await process.communicate()
+    if process.returncode == 0:
+        return jsonify({"status": "success"}), 200
+    else:
+        logging.error(f'Failed to send WhatsApp reply: {stderr.decode()}')
+        return jsonify({"error": "Failed to send WhatsApp message"}), 200
 
 if __name__ == '__main__':
     app.run(port=5000)

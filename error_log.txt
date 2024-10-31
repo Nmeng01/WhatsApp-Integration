@@ -1,43 +1,4 @@
-
-2024-09-12 15:00:13,861 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
-2024-09-12 15:06:29,722 - ERROR - An unexpected error occurred: 'text'
-2024-09-12 15:16:08,236 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
-2024-09-12 15:16:43,605 - ERROR - An unexpected error occurred: 'text'
-2024-09-12 15:16:45,236 - ERROR - An unexpected error occurred: 'text'
-2024-09-12 15:16:48,756 - ERROR - An unexpected error occurred: 'text'
-2024-09-12 15:17:15,845 - ERROR - An unexpected error occurred: 'text'
-2024-09-12 15:22:36,446 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
-2024-09-12 15:23:19,721 - ERROR - An unexpected error occurred: 'text'
-2024-09-12 15:30:29,362 - ERROR - Exception in callback StreamReaderProtocol.connection_made.<locals>.callback(<Task cancell...o/run.py:104>>) at /usr/local/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/streams.py:248
-handle: <Handle StreamReaderProtocol.connection_made.<locals>.callback(<Task cancell...o/run.py:104>>) at /usr/local/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/streams.py:248>
-Traceback (most recent call last):
-  File "/usr/local/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/local/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/streams.py", line 249, in callback
-    exc = task.exception()
-          ^^^^^^^^^^^^^^^^
-  File "/Users/nicholasmeng/.local/share/virtualenvs/WhatsApp-Integration-j_j7e-Vx/lib/python3.11/site-packages/hypercorn/asyncio/run.py", line 110, in _server_callback
-    await TCPServer(app, loop, config, context, lifespan_state, reader, writer)
-  File "/Users/nicholasmeng/.local/share/virtualenvs/WhatsApp-Integration-j_j7e-Vx/lib/python3.11/site-packages/hypercorn/asyncio/tcp_server.py", line 56, in run
-    async with TaskGroup(self.loop) as task_group:
-  File "/Users/nicholasmeng/.local/share/virtualenvs/WhatsApp-Integration-j_j7e-Vx/lib/python3.11/site-packages/hypercorn/asyncio/task_group.py", line 74, in __aexit__
-    await self._task_group.__aexit__(exc_type, exc_value, tb)
-  File "/usr/local/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/taskgroups.py", line 134, in __aexit__
-    raise propagate_cancellation_error
-  File "/Users/nicholasmeng/.local/share/virtualenvs/WhatsApp-Integration-j_j7e-Vx/lib/python3.11/site-packages/hypercorn/asyncio/tcp_server.py", line 72, in run
-    await self._read_data()
-  File "/Users/nicholasmeng/.local/share/virtualenvs/WhatsApp-Integration-j_j7e-Vx/lib/python3.11/site-packages/hypercorn/asyncio/tcp_server.py", line 97, in _read_data
-    data = await asyncio.wait_for(self.reader.read(MAX_RECV), self.config.read_timeout)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/tasks.py", line 452, in wait_for
-    return await fut
-           ^^^^^^^^^
-  File "/usr/local/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/streams.py", line 708, in read
-    await self._wait_for_data('read')
-  File "/usr/local/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/streams.py", line 540, in _wait_for_data
-    await self._waiter
-asyncio.exceptions.CancelledError
-2024-09-12 15:30:45,510 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
-2024-09-12 15:37:37,330 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
-2024-09-12 15:38:26,568 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
-2024-09-12 15:38:35,370 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
+2024-10-30 15:29:07,322 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
+2024-10-30 15:29:21,049 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
+2024-10-30 15:32:37,351 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)
+2024-10-30 15:51:08,137 - INFO - Running on http://127.0.0.1:5000 (CTRL + C to quit)

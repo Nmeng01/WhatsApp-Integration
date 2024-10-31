@@ -8,6 +8,7 @@ quart = "*"
 httpx="*"
 python-dotenv="*"
 asyncio="*"
+beautifulsoup4="*"
 
 [dev-packages]
 
