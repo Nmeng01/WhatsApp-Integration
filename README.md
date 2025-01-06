@@ -7,5 +7,5 @@ Firstly, it is common practice for small businesses to offer customer support th
 ## Functionality
 
 1. **WhatsApp -> Zendesk Integration:** Automatically create a support ticket in Zendesk linked to the correct customer/organization when a WhatsApp message is sent.
-2. **(Coming Soon) Real-time Conversation Updates:** Update existing tickets in real-time if the conversation continues within a certain timeframe.
-3. **(Coming Soon) Zendesk -> WhatsApp Integration** Public replies in Zendesk to WhatsApp tickets are sent back to the customer via WhatsApp.
+2. **Real-time Conversation Updates:** Update existing tickets in real-time if the conversation continues within a certain timeframe.
+3. **Zendesk -> WhatsApp Integration** Public replies in Zendesk to WhatsApp tickets are sent back to the customer via WhatsApp.
